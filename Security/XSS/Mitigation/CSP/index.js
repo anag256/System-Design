@@ -6,7 +6,8 @@ app.use((req,res,next)=>{
     res.setHeader(
     'Content-Security-Policy',
     "default-src 'self';" +
-    "script-src 'self' 'nonce-radomKey' 'unsafe-inline' https://unscure.com;"); //script allow from self and the unsecure url
+    "script-src 'self' 'nonce-radomKey' 'unsafe-inline' ;"); //script allow from self ,
+    // the unsecure url & script with a specified nonce
     // unsafe-oi->inline script
     next();
 })

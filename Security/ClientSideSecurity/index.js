@@ -1,5 +1,8 @@
 //1) 2) 3) Check from notes
 
+//1)
+
+
 //4) Storage Limit
 
 function hasEnoughSpaceForData(){

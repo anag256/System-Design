@@ -4,7 +4,7 @@ const PORT=process.env.PORT || 5020;
 app.use(express.static('public'))
 
 app.use((req,res,next)=>{
-    res.setHeader('Content-Security-Policy',"frame-ancestors 'self'")
+    res.setHeader('Content-Security-Policy',"frame-ancestors 'self' ")
 
     res.cookie('sessionID', '12345', {
         httpOnly: true,
